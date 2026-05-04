@@ -279,3 +279,39 @@ body {
     max-width: 500px;
   }
 }
+
+/* スマホ用：画面いっぱいにする */
+body {
+  display: block;        /* flex中央配置を解除 */
+}
+
+/* コンテナを全幅に */
+#homeScreen, #quizScreen {
+  width: 100%;
+  max-width: none;       /* ←これが原因の本体 */
+  margin: 0;
+  border-radius: 0;      /* 角丸を消す（好み） */
+  box-shadow: none;      /* 影を消す（好み） */
+}
+
+@media (max-width: 600px) {
+  body {
+    display: block;
+  }
+
+  #homeScreen, #quizScreen {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+#homeScreen, #quizScreen {
+  padding: 16px;
+}
+
+body {
+  overflow-x: hidden;
+}
