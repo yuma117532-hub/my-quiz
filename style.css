@@ -1,4 +1,10 @@
 /* ===== リセット ===== */
+
+#homeScreen, #quizScreen {
+  display: block;        /* flex解除（これ重要） */
+  padding-top: 20px;     /* 少しだけ上余白 */
+}
+
 * {
   box-sizing: border-box;
 }
@@ -140,3 +146,14 @@ body {
   }
 }
 
+body {
+  padding-bottom: 120px;  /* ←増やす（重要） */
+}
+
+#nextBtn {
+  bottom: 20px;   /* 10px → 20px にする */
+}
+
+button {
+  margin-top: 12px;
+}
