@@ -166,3 +166,31 @@ select {
 button {
   margin-top: 20px;
 }
+
+/* ===== ホーム画面を完全に中央配置 ===== */
+#homeScreen {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center !important;
+  align-items: center !important;
+
+  height: 100vh !important;
+  padding: 20px !important;
+}
+
+/* 中身のサイズ */
+#homeScreen > * {
+  width: 100%;
+  max-width: 420px;
+}
+
+/* 余計な余白を削除 */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* 下の余白を削除（原因になりやすい） */
+body {
+  padding-bottom: 0 !important;
+}
